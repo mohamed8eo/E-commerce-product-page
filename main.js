@@ -83,7 +83,11 @@ product_Photos.forEach(photo => {
     photo.addEventListener("click", () => {
         document.querySelector(".product-container-second").style.display = "block";
         product_Photos_second[currentindex - 1].classList.add("active");
-        document.querySelector(".Main-content").style.filter = "blur(4px)";
+        if (window.matchMedia("(min-width: 768px)").matches) {
+            document.querySelector(".Main-content").style.filter = "blur(4px)";
+        } else {
+            document.querySelector(".Main-content").style.filter = "none";
+        }
     });
 });
 
