@@ -516,15 +516,17 @@ display: none;
   }
 
   .product-thumbnail {
-    position: static;
+    position: relative;
     margin-top: 386px;
     justify-content: center;
     left: 0;
+    bottom: -52px;
   }
 
   .Main-content .description {
     width: 100%;
     padding: 20px;
+    margin-top: 30px;
   }
 
   .price .new-price{
